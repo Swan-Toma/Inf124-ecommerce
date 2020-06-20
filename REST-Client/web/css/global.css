@@ -1,0 +1,76 @@
+* {
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+
+/* Navbar */
+
+.navbar {
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    padding: 10px;
+    box-shadow: 1px -1px 5px 1px;
+    background-color: white;
+}
+
+.navbar img {
+    height: 50px;
+}
+
+.navigation {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.navigation li {
+    list-style-type: none;
+}
+
+.navigation li a {
+    text-decoration: none;
+    color: black;
+    transition: .5s;
+    font-size: 20px;
+}
+
+.navigation li a:hover {
+    text-decoration: none;
+    color: teal;
+}
+
+.navigation li a:visited {
+    text-decoration: none;
+}
+
+
+/*
+iphone dimensions: about 400 x 700 px
+*/
+
+@media (max-width: 813px) {
+    .navbar {
+        z-index: 1;
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 10px;
+        box-shadow: 1px -1px 5px 1px;
+        background-color: white;
+    }
+    .navbar {
+        justify-items: center;
+    }
+    .navbar img {
+        height: 40px;
+    }
+    .navigation li a {
+        padding: 15px;
+    }
+    ul.navigation {
+        padding-left: 0px;
+    }
+}

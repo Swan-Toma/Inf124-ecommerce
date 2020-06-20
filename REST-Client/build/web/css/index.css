@@ -1,0 +1,232 @@
+/* Jumbotron */
+.jumbotron {
+	background-color: pink;
+	height: 300px;
+	width: 100%;
+	background: url('../imgs/origami.jpeg');
+	backdrop-filter: blur(1px) brightness(.2);
+}
+
+.jumbotron div {
+	height: 100%;
+	margin: auto;
+	text-align: center;
+	background-color: rgba(0, 0, 0, .4);
+}
+
+.jumbotron h1 {
+	padding-top: 70px;
+	margin: auto;
+	font-size: 100px;
+	font-family: 'Playfair Display', serif;
+	color: rgb(255, 255, 255);
+}
+
+/* main content */
+#main {
+	width: 95%;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 1fr 5fr;
+}
+
+/*filters*/
+.filter {
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 25px;
+	display: grid;
+	grid-template-columns: 1fr;
+	min-width: 200px;
+	border: 1px solid rgba(220, 220, 220, 0.75);
+	border-radius: 5%;
+	padding-left: 10px;
+	padding-bottom: 10px;
+	box-shadow: 10px 10px 16px -10px rgba(220, 220, 220, 0.75);
+}
+
+.filterblock {
+	height: 100%;
+	/*min-width: 300px;*/
+}
+
+.filterblock h3 {
+	color: teal;
+}
+
+/* This code is for ch anging the style of the filter checkboxes */
+/* Comes from W3 Schools: https://www.w3schools.com/howto/howto_css_custom_checkbox.asp */
+.checkbox {
+	width: 100%;
+	position: relative;
+	display: block;
+}
+
+.checkbox span {
+	color: black;
+}
+
+.checkbox input[type="checkbox"] {
+	width: auto;
+	opacity: 0.00000001;
+	position: absolute;
+	left: 0;
+	margin-left: -20px;
+}
+.checkbox label {
+	position: relative;
+}
+.checkbox label:before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 3px;
+	margin: 4px;
+	width: 15px;
+	height: 15px;
+	transition: transform 0.28s ease;
+	border-radius: 3px;
+	border: 2px solid teal;
+}
+.checkbox label:after {
+	content: '';
+	display: block;
+	width: 10px;
+	height: 5px;
+	border-bottom: 2px solid teal;
+	border-left: 2px solid teal;
+	-webkit-transform: rotate(-45deg) scale(0);
+	transform: rotate(-45deg) scale(0);
+	transition: transform ease 0.25s;
+	will-change: transform;
+	position: absolute;
+	top: 12px;
+	left: 8px;
+}
+.checkbox input[type="checkbox"]:checked ~ label::before {
+	color: teal;
+}
+
+.checkbox input[type="checkbox"]:checked ~ label::after {
+	-webkit-transform: rotate(-45deg) scale(1);
+	transform: rotate(-45deg) scale(1);
+}
+
+.checkbox label {
+	min-height: 34px;
+	display: block;
+	padding-left: 40px;
+	margin-bottom: 0;
+	font-weight: normal;
+	cursor: pointer;
+}
+.checkbox label span {
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+.checkbox input[type="checkbox"]:focus + label::before {
+	outline: 0;
+}
+
+/* END code for changing the style of the filter checkboxes */
+
+/* table */
+/* version Grid
+.table {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	justify-items: center;
+	
+	text-align: center;
+	padding: 1%;
+}
+*/
+/* Version Flexbox */
+.table {
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	text-align: center;
+	align-content: center;
+	max-width: 1100px;
+}
+
+.table a {
+	text-decoration: none;
+	color: black;
+}
+
+.product {
+	box-shadow: 10px 10px 16px -10px rgba(220, 220, 220, 0.75);
+	margin: 10px;
+	background-color: rgba(128, 255, 212, 0.4);
+	color: black;
+	transition: 500ms;
+	max-height: 330px;
+}
+
+.product img {
+	width: 250px;
+	height: 250px;
+}
+
+.product-scale {
+	transform: scale(1.1);
+}
+
+.hidden {
+	display: none;
+}
+
+.search-container {
+	padding-top: 10px;
+	color: teal;
+	font-weight: bold;
+}
+
+.search-container input {
+	border-radius: 2px;
+}
+
+@media (max-width: 667px) {
+	#main {
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+
+	.jumbotron h1 {
+		font-size: 75px;
+	}
+}
+
+.history {
+	display: flex;
+        flex-wrap: wrap;
+}
+
+#history {
+    margin-left: 260px;
+}
+
+.product_history {
+	box-shadow: 10px 10px 16px -10px rgba(220, 220, 220, 0.75);
+	margin: 10px;
+	background-color: rgba(128, 255, 212, 0.4);
+	color: black;
+	transition: 500ms;
+        max-width: 200px;
+        text-align: center;
+}
+
+.product_history img {
+    	max-height: 200px;
+        max-width: 200px;
+}
+
+.history a {
+    text-decoration: none;
+    color: black;
+}

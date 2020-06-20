@@ -1,0 +1,134 @@
+#main {
+    margin-top: 10px;
+    padding-top: 25px;
+    display: grid;
+    width: 70%;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5%;
+}
+
+#form label {
+    display: block;
+    padding-bottom: 5px;
+}
+
+input[type=text],
+input[type=tel] {
+    width: 96%;
+    margin-bottom: 10px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+input[type=submit] {
+    margin-bottom: 10px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: rgb(55, 55, 55);
+    color: white;
+    width: 100%;
+}
+
+input[type=submit]:hover {
+    background-color: black;
+}
+
+select {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 18px;
+}
+
+.addr {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    column-gap: 5%;
+    width: 97%;
+}
+
+.addr select {
+    height: 58%;
+}
+
+.expDate select {
+    width: 49.5%;
+}
+
+#info img {
+    width: 400px;
+    height: 400px;
+}
+
+.name {
+    width: 98%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5%;
+}
+
+
+/*
+ * ipad pro: 1024 x 1366 px
+ */
+
+@media (max-width: 1024px) {
+    #main {
+        width: 90%;
+    }
+    .addr select {
+        margin-left: 10px;
+        height: 2.5rem;
+        font-size: 14px;
+    }
+    .expDate select {
+        width: 48.5%;
+    }
+}
+
+
+/*
+ * ipad pro: 768 x 1024 px
+ */
+
+@media (max-width: 768px) {
+    #main {
+        grid-template-columns: 1fr;
+    }
+    #info {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        column-gap: 5%;
+        border-bottom: 1px solid black;
+    }
+    #info img {
+        width: 250px;
+        height: 250px;
+        margin-bottom: 20px;
+    }
+    #form {
+        margin-top: 5px;
+    }
+}
+
+
+/*
+ * ipad pro: 768 x 1024 px
+ */
+
+@media (max-width: 375px) {
+    #info {
+        grid-template-columns: 1fr;
+    }
+    #info img {
+        margin: 0 auto;
+        width: 200px;
+        height: 200px;
+        margin-bottom: 20px;
+    }
+}

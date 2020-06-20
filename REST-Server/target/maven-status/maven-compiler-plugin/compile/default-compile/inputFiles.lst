@@ -1,0 +1,10 @@
+/Users/swantoma/Desktop/Inf124-ecommerce/REST-Server/src/main/java/restservice/database/DatabaseConnector.java
+/Users/swantoma/Desktop/Inf124-ecommerce/REST-Server/src/main/java/restservice/resources/ZipResouce.java
+/Users/swantoma/Desktop/Inf124-ecommerce/REST-Server/src/main/java/restservice/model/Product.java
+/Users/swantoma/Desktop/Inf124-ecommerce/REST-Server/src/main/java/restservice/database/DatabaseUtils.java
+/Users/swantoma/Desktop/Inf124-ecommerce/REST-Server/src/main/java/restservice/resources/OrderResource.java
+/Users/swantoma/Desktop/Inf124-ecommerce/REST-Server/src/main/java/restservice/model/Category.java
+/Users/swantoma/Desktop/Inf124-ecommerce/REST-Server/src/main/java/restservice/model/ZipCode.java
+/Users/swantoma/Desktop/Inf124-ecommerce/REST-Server/src/main/java/restservice/model/Order.java
+/Users/swantoma/Desktop/Inf124-ecommerce/REST-Server/src/main/java/restservice/service/ProductService.java
+/Users/swantoma/Desktop/Inf124-ecommerce/REST-Server/src/main/java/restservice/resources/ProductResource.java

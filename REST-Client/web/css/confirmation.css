@@ -1,0 +1,21 @@
+.thanks {
+    margin: 0 auto;
+    width: 50%;
+	border-bottom: 1px solid black;
+	margin-top: 50px;
+}
+
+.conf_info{
+    margin: 10%
+}
+
+.details{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.details span {
+    font-weight: bold;
+}

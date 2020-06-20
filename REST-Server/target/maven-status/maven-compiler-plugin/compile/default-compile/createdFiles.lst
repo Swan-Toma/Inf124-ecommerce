@@ -1,0 +1,10 @@
+restservice/resources/ZipResouce.class
+restservice/model/ZipCode.class
+restservice/database/DatabaseConnector.class
+restservice/model/Category.class
+restservice/database/DatabaseUtils.class
+restservice/resources/ProductResource.class
+restservice/resources/OrderResource.class
+restservice/model/Order.class
+restservice/service/ProductService.class
+restservice/model/Product.class
